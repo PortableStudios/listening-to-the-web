@@ -1,41 +1,19 @@
 import React from 'react';
 
-import { GetStaticProps } from 'next';
-
-import { BlogGallery, IBlogGalleryProps } from '../blog/BlogGallery';
+import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
-import { IPaginationProps } from '../pagination/Pagination';
 import { Main } from '../templates/Main';
-import { Config } from '../utils/Config';
-import { getAllPosts } from '../utils/Content';
 
-const Index = (props: IBlogGalleryProps) => (
-  <Main
-    meta={(
-      <Meta
-        title="Made with Next.js, TypeScript, ESLint, Prettier, PostCSS, Tailwind CSS"
-        description={Config.description}
-      />
-    )}
-  >
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
+const Home = () => (
+  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+    <Content>
+      <h1 className="mb-6 text-2xl">Home</h1>
+      <div className="bg-black text-white p-10">
+        Welcome to the Accessibility Playground!
+        Turn on you VoiceOver option on your mac  by going to <span className="text-green-200">`Accessibiliy` => `VoiceOver` and ticking the checkbox</span>
+      </div>
+    </Content>
   </Main>
 );
 
-export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
-  const posts = getAllPosts(['title', 'date', 'slug']);
-  const pagination: IPaginationProps = {};
-
-  if (posts.length > Config.pagination_size) {
-    pagination.next = '/page2';
-  }
-
-  return {
-    props: {
-      posts: posts.slice(0, Config.pagination_size),
-      pagination,
-    },
-  };
-};
-
-export default Index;
+export default Home;

@@ -1,9 +1,9 @@
 export const Config = {
-  site_name: 'Starter',
-  title: 'Next.js Boilerplate',
-  description: 'Starter code for your Next.js blog Boilerplate with Tailwind CSS',
-  url: 'https://example.com',
+  site_name: 'Listening To The Web',
+  title: 'Listening To The Web',
+  description: 'Playground to test Screen Reader',
+  url: 'https://listening-to-the-web.netlify.com',
   locale: 'en',
-  author: 'Anonymous',
+  author: 'C Stark',
   pagination_size: 5,
 };
