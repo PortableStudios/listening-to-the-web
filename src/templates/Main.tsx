@@ -23,29 +23,28 @@ const Main = (props: IMainProps) => (
         <div>
           <Navbar>
             <li className="mr-6">
-              <Link href="/">
+              <Link href="/" aria-label="Home Page">
                 <a>Home</a>
               </Link>
             </li>
             <li className="mr-6">
-              <Link href="/button/">
-                <a>Button</a>
+              <Link href="/button/" aria-label="Explore Accessible Buttons">
+                <a>Buttons</a>
               </Link>
             </li>
             <li className="mr-6">
-              <Link href="/image/">
-                <a>Image</a>
+              <Link href="/image/" aria-label="Explore Accessible Images">
+                <a>Images</a>
               </Link>
             </li>
             <li className="mr-6">
-              <Link href="/table/">
-                <a>Table</a>
+              <Link href="/table/" aria-label="Explore Accessible Tables">
+                <a>Tables</a>
               </Link>
             </li>
           </Navbar>
         </div>
       </div>
-
       <div className="py-5 text-xl">{props.children}</div>
     </div>
   </div>

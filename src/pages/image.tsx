@@ -5,10 +5,11 @@ import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 
 const Image = () => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+  <Main meta={<Meta title="Images Page" description="Explore these image examples" />}>
     <h1 className="mb-6 text-2xl">Image</h1>
     <div className="bg-black text-white p-10">
-      An image alt tag is a vital part of the Accessibiliy markup. Check out these three images.
+      An image alt tag is a vital part of the Accessibiliy markup. Cmd + Option + Control + g to go
+      too the next graphic. Cmd + Option + Control + Shift + g to go to the prev graphic.
     </div>
     <Content>
       <div>

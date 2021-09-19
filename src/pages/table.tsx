@@ -8,13 +8,15 @@ const Table = () => (
   <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
     <Content>
       <h1 className="mb-6 text-2xl">Tables</h1>
-      <div className="p-10 text-white bg-black">
-        go through each cell on the table and compare the 'Good' and the 'Bad' versions
+      <div className="bg-black text-white p-10">
+        It is very helpful to have caption in tables alsong wih helpful headings. Make sure you rae
+        using the correct th element. Cmd + Option + Control + t to jump from different tables. Cmd
+        + Option + Control + Shift + j to go to the prev table.
       </div>
       <div className="mb-10">
         <h2>The Good</h2>
         <table className="table-fixed w-100">
-          <caption>Delivery slots:</caption>
+          <caption>Delivery slots in Collingwood:</caption>
           <tr>
             <td />
             <th scope="col">Monday</th>
@@ -44,14 +46,13 @@ const Table = () => (
       <div className="mb-10">
         <h2>The Bad</h2>
         <table>
-          <caption>Delivery slots:</caption>
           <tr>
             <td />
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
+            <td>Monday</td>
+            <td>Tuesday</td>
+            <td>Wednesday</td>
+            <td>Thursday</td>
+            <td>Friday</td>
           </tr>
           <tr>
             <th>09:00 - 11:00</th>
