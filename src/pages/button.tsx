@@ -17,7 +17,6 @@ const Image = () => (
           type="button"
           className="p-5 text-center text-white bg-black w-72 rounded-md point"
           onClick={() => null}
-          alt=""
         >
           Go to the Next Step
         </button>
