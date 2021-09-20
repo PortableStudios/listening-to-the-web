@@ -19,7 +19,7 @@ const Table = () => (
     <Content>
       <MainHeading>Tables - TH headings and captions</MainHeading>
       <CallOut>
-        It is very helpful to have caption in tables alsong wih helpful headings. Make sure you rae
+        It is very helpful to have caption in tables along with helpful headings. Make sure you are
         using the correct th element.
         <div className="mt-10">
           On VoiceOver, Navigate by &#39;Table&#39; on the keyboard by pressing
