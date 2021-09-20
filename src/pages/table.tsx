@@ -22,7 +22,7 @@ const Table = () => (
         It is very helpful to have caption in tables alsong wih helpful headings. Make sure you rae
         using the correct th element.
         <div className="mt-10">
-          On VoiceOver, Navigate by 'Table' on the keyboard by pressing
+          On VoiceOver, Navigate by &#39;Table&#39; on the keyboard by pressing
           {' '}
           <span className="text-red-300">Cmd + Option + Control + Left or Right</span>
           . After
@@ -42,6 +42,13 @@ const Table = () => (
           to search
           backwards.
           {' '}
+        </div>
+        <div className="mt-10">
+          Navigate in the table:
+          {' '}
+          <span>Once in the table you can navigate through the table with</span>
+          {' '}
+          <span className="text-red-300">Control + Option + Up or Left or Down or Right</span>
         </div>
       </CallOut>
       <div className="mb-10">
@@ -82,30 +89,34 @@ const Table = () => (
       <div className="mb-10">
         <h2>The Bad</h2>
         <table className="w-full table-auto text-md">
-          <tr>
-            <td />
-            <td>Monday</td>
-            <td>Tuesday</td>
-            <td>Wednesday</td>
-            <td>Thursday</td>
-            <td>Friday</td>
-          </tr>
-          <tr>
-            <td>09:00 - 11:00</td>
-            <td>Closed</td>
-            <td>Open</td>
-            <td>Open</td>
-            <td>Closed</td>
-            <td>Closed</td>
-          </tr>
-          <tr>
-            <td>11:00 - 13:00</td>
-            <td>Open</td>
-            <td>Open</td>
-            <td>Closed</td>
-            <td>Closed</td>
-            <td>Closed</td>
-          </tr>
+          <thead>
+            <tr>
+              <td />
+              <th scope="col">Monday</th>
+              <th scope="col">Tuesday</th>
+              <th scope="col">Wednesday</th>
+              <th scope="col">Thursday</th>
+              <th scope="col">Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:00 - 11:00</td>
+              <td>Closed</td>
+              <td>Open</td>
+              <td>Open</td>
+              <td>Closed</td>
+              <td>Closed</td>
+            </tr>
+            <tr>
+              <td>11:00 - 13:00</td>
+              <td>Open</td>
+              <td>Open</td>
+              <td>Closed</td>
+              <td>Closed</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </Content>

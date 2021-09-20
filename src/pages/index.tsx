@@ -35,7 +35,19 @@ const Home = () => (
           <li>
             <span className="text-red-300">Control</span>
             {' '}
-            to pause the Reader
+            to pause/skip the Reader
+          </li>
+          <li>
+            <span className="text-red-300">Control + Option + Command + Left or Right</span>
+            {' '}
+            to
+            select what element you want to navigate e.g. Landmark link
+          </li>
+          <li>
+            <span className="text-red-300">Control + Option + Command + Up or Down</span>
+            {' '}
+            to
+            navigate through the selected element link
           </li>
           <li>
             <span className="text-red-300">Control + Option + Space</span>

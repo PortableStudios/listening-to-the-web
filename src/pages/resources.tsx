@@ -23,7 +23,7 @@ const Resource = () => (
           </li>
           <li>
             <a
-              href="https://docs.google.com/presentation/d/134qKrfvi_-FAapa3Y9joH9ivJPqoJdl5ZSm4NKsPCTs/edit#slide=id.gf04db885bc_2_118"
+              href="https://docs.google.com/presentation/d/1pyIKqpRBj1m5maBnkyjnjeKTPLM7U0ygDaxjv4OlTio/edit#slide=id.gf04db885bc_2_118"
               target="_blank"
               rel="noreferrer"
             >
@@ -49,6 +49,26 @@ const Resource = () => (
           <li>
             <a href="https://www.w3.org/TR/using-aria/#intro" target="_blank" rel="noreferrer">
               Introduction to how to use ARIA
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>a11y advocate companies</h2>
+        <ul>
+          <li>
+            <a href="https://www.valid.org.au/" target="_blank" rel="noreferrer">
+              VALID
+            </a>
+          </li>
+          <li>
+            <a href="https://www.a11yproject.com/" target="_blank" rel="noreferrer">
+              a11y project
+            </a>
+          </li>
+          <li>
+            <a href="https://intopia.digital/" target="_blank" rel="noreferrer">
+              Intopia
             </a>
           </li>
         </ul>
