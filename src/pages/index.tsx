@@ -6,21 +6,22 @@ import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 import CallOut from './Callout';
+import MainHeading from './MainHeading';
 
 const Home = () => (
   <Main meta={<Meta title="Home Page" description="Listening to the Web Home Page" />}>
     <Content>
-      <h1 className="mb-6 text-2xl">Home Page</h1>
+      <MainHeading>Home Page</MainHeading>
       <p>Disclaimer: Instructions for this site is currently only with Mac VoiceOver</p>
       <CallOut>
         <span className="text-green-200">Welcome to the Accessibility Playground!</span>
         {' '}
         Turn on you
-        VoiceOver option on your mac by going to your Settings, clicking on Accessibiliy, then
-        VoiceOver and ticking the checkbox. Or press
+        VoiceOver option on your mac by going to your Settings, clicking on Accessibility, then
+        VoiceOver and ticking the check box. Or press
         {' '}
-        <span className="text-red-300">Command + f5</span>
-        {' '
+        <span className="text-red-300">Command + F5</span>
+        {' '}
         to turn on (press twice to turn off).
       </CallOut>
       <p> Here&#39;s some Basic commands to get you started:</p>
@@ -54,7 +55,7 @@ const Home = () => (
             <Link href="https://www.maxability.co.in/voiceover-mac-commands/">
               <a className="text-red-300 underline" target="_blank" rel="noreferrer">
                 {' '}
-                Command Cheetsheat
+                Command Cheatsheet
                 {' '}
               </a>
             </Link>

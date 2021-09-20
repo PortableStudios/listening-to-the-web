@@ -1,8 +1,6 @@
 import React from 'react';
 
-type Props = { children: string | Element };
-
-const CallOut: React.RFC<Props> = ({ children }) => (
+const CallOut: React.FC = ({ children }) => (
   <div className="p-10 text-white bg-black">{children}</div>
 );
 

@@ -3,6 +3,9 @@ import React from 'react';
 import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
+import CallOut from './Callout';
+import Divider from './Divider';
+import MainHeading from './MainHeading';
 
 const Table = () => (
   <Main
@@ -14,21 +17,33 @@ const Table = () => (
     )}
   >
     <Content>
-      <h1 className="mb-6 text-2xl">Tables - TH headings and captions</h1>
-      <div className="bg-black text-white p-10">
+      <MainHeading>Tables - TH headings and captions</MainHeading>
+      <CallOut>
         It is very helpful to have caption in tables alsong wih helpful headings. Make sure you rae
         using the correct th element.
-        {' '}
-        <span className="text-red-300">Cmd + Option + Control + t</span>
-        {' '}
-        to jump from different
-        tables.
-        {' '}
-        <span className="text-red-300">Cmd + Option + Control + Shift + t</span>
-        {' '}
-        to go to
-        the prev table.
-      </div>
+        <div className="mt-10">
+          On VoiceOver, Navigate by 'Table' on the keyboard by pressing
+          {' '}
+          <span className="text-red-300">Cmd + Option + Control + Left or Right</span>
+          . After
+          selecting you can now navigate through each option by
+          {' '}
+          <span className="text-red-300">Cmd + Option + Control + Up or Down.</span>
+        </div>
+        <div className="mt-10">
+          Optional:
+          {' '}
+          <span className="text-red-300">Cmd + Option + Control + t</span>
+          {' '}
+          and
+          {' '}
+          <span className="text-red-300">Cmd + Option + Control + Shift + t</span>
+          {' '}
+          to search
+          backwards.
+          {' '}
+        </div>
+      </CallOut>
       <div className="mb-10">
         <h2>The Good</h2>
         <table className="w-full table-auto text-md">
@@ -63,6 +78,7 @@ const Table = () => (
           </tbody>
         </table>
       </div>
+      <Divider />
       <div className="mb-10">
         <h2>The Bad</h2>
         <table className="w-full table-auto text-md">
