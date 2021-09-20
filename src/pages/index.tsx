@@ -1,28 +1,68 @@
 import React from 'react';
 
+import Link from 'next/link';
+
 import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
+import CallOut from './Callout';
 
 const Home = () => (
   <Main meta={<Meta title="Home Page" description="Listening to the Web Home Page" />}>
     <Content>
-      <h1 className="mb-6 text-2xl">Home</h1>
-      <div className="bg-black text-white p-10">
-        Welcome to the Accessibility Playground! Turn on you VoiceOver option on your mac by going
-        to your Settings, clicking on
+      <h1 className="mb-6 text-2xl">Home Page</h1>
+      <p>Disclaimer: Instructions for this site is currently only with Mac VoiceOver</p>
+      <CallOut>
+        <span className="text-green-200">Welcome to the Accessibility Playground!</span>
         {' '}
-        <span className="text-green-200">
-          `Accessibiliy, then VoiceOver and ticking the checkbox.
-        </span>
-        .
-        <h2> Some Basic commands to get you started:</h2>
+        Turn on you
+        VoiceOver option on your mac by going to your Settings, clicking on Accessibiliy, then
+        VoiceOver and ticking the checkbox. Or press
+        {' '}
+        <span className="text-red-300">Command + f5</span>
+        {' '
+        to turn on (press twice to turn off).
+      </CallOut>
+      <p> Here&#39;s some Basic commands to get you started:</p>
+      <CallOut>
         <ul>
-          <li>Tab to jump to different links</li>
-          <li>Control + Option + Space to select the link</li>
-          <li>Control + Option + A for an auto read of the page frrom top to bottom</li>
+          <li>
+            <span className="text-red-300">Tab</span>
+            {' '}
+            to jump to different links
+          </li>
+          <li>
+            <span className="text-red-300">Control</span>
+            {' '}
+            to pause the Reader
+          </li>
+          <li>
+            <span className="text-red-300">Control + Option + Space</span>
+            {' '}
+            to select the selected
+            link
+          </li>
+          <li>
+            <span className="text-red-300">Control + Option + A</span>
+            {' '}
+            Read from current position to
+            end of the page
+          </li>
+          <li>
+            Checkout this
+            {' '}
+            <Link href="https://www.maxability.co.in/voiceover-mac-commands/">
+              <a className="text-red-300 underline" target="_blank" rel="noreferrer">
+                {' '}
+                Command Cheetsheat
+                {' '}
+              </a>
+            </Link>
+            {' '}
+            for even more commands!
+          </li>
         </ul>
-      </div>
+      </CallOut>
     </Content>
   </Main>
 );

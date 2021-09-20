@@ -23,23 +23,23 @@ const Main = (props: IMainProps) => (
         <div>
           <Navbar>
             <li className="mr-6">
-              <Link href="/" aria-label="Home Page">
+              <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
             <li className="mr-6">
-              <Link href="/button/" aria-label="Explore Accessible Buttons">
-                <a>Buttons</a>
+              <Link href="/button/">
+                <a>Buttons - Don't use div's as buttons</a>
               </Link>
             </li>
             <li className="mr-6">
-              <Link href="/image/" aria-label="Explore Accessible Images">
-                <a>Images</a>
+              <Link href="/image/">
+                <a>Images - Use proper Alt tags</a>
               </Link>
             </li>
             <li className="mr-6">
-              <Link href="/table/" aria-label="Explore Accessible Tables">
-                <a>Tables</a>
+              <Link href="/table/">
+                <a>Tables - TH headings and captions</a>
               </Link>
             </li>
           </Navbar>

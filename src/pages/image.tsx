@@ -3,14 +3,23 @@ import React from 'react';
 import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
+import CallOut from './Callout';
 
 const Image = () => (
-  <Main meta={<Meta title="Images Page" description="Explore these image examples" />}>
-    <h1 className="mb-6 text-2xl">Image</h1>
-    <div className="bg-black text-white p-10">
-      An image alt tag is a vital part of the Accessibiliy markup. Cmd + Option + Control + g to go
-      too the next graphic. Cmd + Option + Control + Shift + g to go to the prev graphic.
-    </div>
+  <Main meta={<Meta title="Image's with no Alt Tags" description="Explore these image examples" />}>
+    <h1 className="mb-6 text-2xl">Image&#39;s with no Alt Tags</h1>
+    <CallOut>
+      An image alt tag is a vital part of the Accessibiliy markup.
+      {' '}
+      <span className="text-red-300">Cmd + Option + Control + g</span>
+      {' '}
+      to go too the next graphic.
+      {' '}
+      <span className="text-red-300">Cmd + Option + Control + Shift + g</span>
+      {' '}
+      to go to the prev
+      graphic.
+    </CallOut>
     <Content>
       <div>
         <h2>Image with No Alt Text</h2>
